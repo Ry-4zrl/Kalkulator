@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f0f4f1;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: min(100%, 360px);
+  padding: 24px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  color: #1b5e20;
+}
+
+.angka_input {
+  display: grid;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c6d5c8;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+#operator {
+  text-align: center;
+  background: #f5faf5;
+}
+
+.tombol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 18px 0;
+}
+
+button {
+  min-height: 46px;
+  border: 0;
+  border-radius: 7px;
+  background: #4caf50;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #388e3c;
+}
+
+#tombol_hasil {
+  width: 100%;
+}
+
+#hasil {
+  min-height: 52px;
+  margin: 16px 0 0;
+  padding: 14px;
+  border: 1px solid #4caf50;
+  border-radius: 7px;
+  background: #e8f5e9;
+  color: #1b5e20;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}

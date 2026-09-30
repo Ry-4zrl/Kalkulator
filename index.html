@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kalkulator sederhana untuk operasi matematika dasar dan scientific." />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <h1>Kalkulator</h1>
+      <div class="angka_input">
+        <input type="number" id="angka_1" placeholder="Masukkan angka 1" step="any" aria-label="Angka pertama" />
+        <input type="text" id="operator" placeholder="Pilih operator" aria-label="Operator" readonly />
+        <input type="number" id="angka_2" placeholder="Masukkan angka 2" step="any" aria-label="Angka kedua" />
+      </div>
+      <div class="tombol" aria-label="Pilihan operasi">
+        <button id="tombol_tambah" type="button">+</button>
+        <button id="tombol_kurang" type="button">&minus;</button>
+        <button id="tombol_kali" type="button">&times;</button>
+        <button id="tombol_bagi" type="button">&divide;</button>
+        <button id="tombol_pangkat" type="button">x^</button>
+        <button id="tombol_kuadrat" type="button">x&sup2;</button>
+        <button id="tombol_akar" type="button">&radic;</button>
+        <button id="tombol_akar_pangkat" type="button">&radic;^</button>
+      </div>
+      <button id="tombol_hasil" type="button">Hitung =</button>
+      <p id="hasil" aria-live="polite">Hasil akan tampil di sini.</p>
+    </main>
+    <script src="kalkulator.js"></script>
+  </body>
+</html>

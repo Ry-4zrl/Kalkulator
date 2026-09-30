@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1 class="judul">Kalkulator Scientific</h1>
+      <!-- input angka -->
+      <div class="angka_input">
+        <input type="number" id="angka_1" placeholder="Masukkan Angka 1" />
+        <input type="text" id="operator" placeholder="Masukkan Operator" />
+        <input type="number" id="angka_2" placeholder="Masukkan Angka 2" />
+      </div>
+      <!-- Daftar Tombol -->
+      <div class="tombol1">
+        <!-- tombol kali -->
+        <button id="tombol_kali">X</button>
+        <!-- tombol bagi -->
+        <button id="tombol_bagi">:</button>
+        <!-- tombol tambah -->
+        <button id="tombol_tambah">+</button>
+      </div>
+      <div class="tombol2">
+        <!-- tombol kurang -->
+        <button id="tombol_kurang">-</button>
+        <!-- tombol kuadrat -->
+        <button id="tombol_kuadrat">x²</button>
+        <!-- tombol akar -->
+        <button id="tombol_akar">√</button>
+      </div>
+      <div class="tombol3">
+        <!-- tombol pangkat -->
+        <button id="tombol_pangkat">x^</button>
+        <!-- tombol akar pangkat -->
+        <button id="tombol_akar_pangkat">√^</button>
+        <!-- tombol hasil -->
+        <button id="tombol_hasil">=</button>
+      </div>
+      <p id="hasil" aria-live="polite">Hasil akan tampil di sini.</p>
+    </div>
+
+    <script src="kalkulator.js"></script>
+  </body>
+</html>
